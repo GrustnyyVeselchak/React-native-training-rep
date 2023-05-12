@@ -11,6 +11,9 @@ This repository is made to learn some React native features. Here you will build
 
 ## Repository overview
 - NativeApp - folder with app
+	- src
+		- compontns
+		- routs
 	- assets - folder stores all images
 	- gitignore - file instructs Git to ignore certain files or folders in a project
 	- App.js - file contains main component to start your study app.
