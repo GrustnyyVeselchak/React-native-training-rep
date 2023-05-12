@@ -5,7 +5,6 @@ import Header from './src/components/header';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Первый запуск Expo go</Text>
       <Header/>
       <StatusBar style="auto" />
     </View>
@@ -15,8 +14,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'space-between',
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
