@@ -7,7 +7,6 @@ export default function Header(prop) {
             <Text>
                 Learning language app
             </Text>
-            <Button  title="+" style={styles.button}/>
         </View>
     )
 }
@@ -23,8 +22,4 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-
-    button: {
-        backgroundColor: '#9245EC'
-    }
   });
