@@ -1,48 +1,47 @@
 export const wordsData = [
     {
-        text: "Слово",
+        word: "Слово",
         description: "Перевод"
 
     },
     {
-        text: "Слово",
+        word: "Слово",
         description: "Перевод"
 
     },
     {
-        text: "Слово",
+        word: "Слово",
+        description: "Перевод"
+
+    },   
+    {
+        word: "Слово",
         description: "Перевод"
 
     },
     {
-        text: "Слово",
+        word: "Слово",
         description: "Перевод"
 
     },
     {
-        text: "Слово",
+        word: "Слово",
         description: "Перевод"
 
     },
     {
-        text: "Слово",
+        word: "Слово",
         description: "Перевод"
 
     },
     {
-        text: "Слово",
+        word: "Слово",
         description: "Перевод"
 
     },
     {
-        text: "Слово",
+        word: "Слово",
         description: "Перевод"
 
     },
-    {
-        text: "Слово",
-        description: "Cdkfjskf"
-
-    },
-    
 ];

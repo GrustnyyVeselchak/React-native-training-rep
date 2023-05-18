@@ -6,9 +6,6 @@ import { wordsData } from "./info";
 export default function List(prop){
     return (
         <View>
-            <Button title="add">
-                
-            </Button>
             <ScrollView>
                 {wordsData.map((row) => (
                     <View key={row}>
