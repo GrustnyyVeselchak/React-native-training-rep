@@ -2,22 +2,13 @@ import React, {useState} from "react";
 import { StyleSheet, View, TextInput, Button  } from "react-native";
 import { wordsData } from "../components/info.js";
 
+
 export default function AddScrean(prop) {
     const [word, setWord] = useState('');
     const [description, setDescription] = useState('');
 
-    const newWord = {
-        word: word,
-        description: description
-    };
-
     const handleAddWord = () => {
         console.log(wordsData)
-        console.log(newWord)
-        console.log('до добавления')
-        wordsData.push(newWord)
-        console.log(wordsData)
-        console.log('После')
     }
 
     return(

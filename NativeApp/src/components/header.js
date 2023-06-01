@@ -1,5 +1,7 @@
 import React from "react";
-import { StyleSheet, View, Text, Button,  } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
+import ExampleComponent from '../../logic';
+
 
 export default function Header(prop) {
     return(
@@ -7,6 +9,7 @@ export default function Header(prop) {
             <Text>
                 Learning language app
             </Text>
+            <ExampleComponent/>
         </View>
     )
 }
