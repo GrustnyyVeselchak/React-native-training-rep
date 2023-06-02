@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
-import DataScreen from '../../logic';
+import ExampleComponent from "../../logic";
 
 
 export default function Header(prop) {
@@ -9,7 +9,7 @@ export default function Header(prop) {
             <Text>
                 Learning language app
             </Text>
-            <DataScreen/>
+            <ExampleComponent/>
         </View>
     )
 }

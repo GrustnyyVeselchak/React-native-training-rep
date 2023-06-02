@@ -1,3 +1,4 @@
+/*
 import React, { useEffect, useState } from 'react';
 import { View, Text } from "react-native";
 import * as FileSystem from 'expo-file-system';
@@ -34,7 +35,7 @@ const DataScreen = () => {
 };
 
 export default DataScreen;
-
+*/
 
 
 
@@ -52,7 +53,7 @@ const updatedJsonString = JSON.stringify(jsonData);
 await FileSystem.writeAsStringAsync(jsonFilePath, updatedJsonString);*/
 
 
-/*import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { View, Text } from 'react-native';
 import data from './huina.json'; // Импорт JSON файла
 import * as FileSystem from 'expo-file-system';
@@ -69,7 +70,7 @@ const ExampleComponent = () => {
   useEffect(() => {
     const readJsonFile = async () => {
       try {
-        const fileUri = `FileSystem.documentDirectory + 'assets/data.json' `;
+        const fileUri = `FileSystem.documentDirectory + './data/data.json' `;
         const content = await FileSystem.readAsStringAsync(fileUri);
         const jsonData = JSON.parse(content);
         console.log('Содержимое JSON файла:', jsonData);
@@ -88,4 +89,4 @@ const ExampleComponent = () => {
   );
 };
 
-export default ExampleComponent; */
+export default ExampleComponent;
