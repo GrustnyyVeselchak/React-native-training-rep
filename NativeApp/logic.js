@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { View, Text } from "react-native";
 import * as FileSystem from 'expo-file-system';
 import { Asset } from 'expo-asset';
 
@@ -10,6 +11,7 @@ const readDataFromJsonFile = async () => {
 
 const jsonData = await readDataFromJsonFile();
 console.log(jsonData); // Выводим данные в консоль
+
 
 const DataScreen = () => {
   const [jsonData, setJsonData] = useState(null);
@@ -23,11 +25,11 @@ const DataScreen = () => {
   }, []);
 
   return (
-    <div>
-      {jsonData && (
-        <pre>{JSON.stringify(jsonData, null, 2)}</pre>
-      )}
-    </div>
+    <View>
+     <Text>
+      заглушка
+     </Text>
+    </View>
   );
 };
 
