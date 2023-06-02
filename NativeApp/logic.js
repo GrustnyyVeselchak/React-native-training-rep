@@ -1,3 +1,42 @@
+import React, { useEffect, useState } from 'react';
+import * as FileSystem from 'expo-file-system';
+import { Asset } from 'expo-asset';
+
+const readDataFromJsonFile = async () => {
+  const jsonFilePath = Asset.fromModule(require('./data/data.json')).uri;
+  const jsonContent = await FileSystem.readAsStringAsync(jsonFilePath);
+  return JSON.parse(jsonContent);
+};
+
+const jsonData = await readDataFromJsonFile();
+console.log(jsonData); // Выводим данные в консоль
+
+const DataScreen = () => {
+  const [jsonData, setJsonData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await readDataFromJsonFile();
+      setJsonData(data);
+    };
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      {jsonData && (
+        <pre>{JSON.stringify(jsonData, null, 2)}</pre>
+      )}
+    </div>
+  );
+};
+
+export default DataScreen;
+
+
+
+
+/*
 import * as FileSystem from 'expo-file-system';
 import { Asset } from 'expo-asset';
 
@@ -8,23 +47,7 @@ const jsonContent = await FileSystem.readAsStringAsync(jsonFilePath);
 const jsonData = JSON.parse(jsonContent);
 jsonData.newField = 'New value';
 const updatedJsonString = JSON.stringify(jsonData);
-await FileSystem.writeAsStringAsync(jsonFilePath, updatedJsonString);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+await FileSystem.writeAsStringAsync(jsonFilePath, updatedJsonString);*/
 
 
 /*import React, { useEffect } from 'react';
